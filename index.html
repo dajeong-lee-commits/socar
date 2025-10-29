@@ -5,27 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>쏘카</title>
-    <link rel="stylesheet" href="css/프로젝트01.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
     <script>
-        window.onload = () => {
-            
-            let openBtn = document.getElementsByTagName('img')[1];
-            let closeBtn = document.getElementsByTagName('img')[2];
-            let nav = document.getElementsByClassName('nav')[0];
+        $(function () {
+            $('.header .inner .menu_open').on('click', function () {
+                $('.header .inner .nav').addClass('active')
+            })
+            $('.header .inner .nav .menu_close').on('click', function () {
+                $('.header .inner .nav').removeClass('active')
+            })
 
-            openBtn.addEventListener('click', () => {
-                nav.style.display = 'block';
-            });
-            closeBtn.addEventListener('click', () => {
-                nav.style.display = 'none';
-            });
-
-            let item = document.getElementsByClassName('item')[0];
-            let 
-
-
-         
-        }
+        });
 
 
     </script>
@@ -44,7 +36,7 @@
                 <button class="menu_close">
                     <img src="img/icon.png" alt="">
                 </button><!-- .menu_close -->
-                <ul class="gnb">
+                <ul class="gnb top">
                     <li><a href="#" class="depth-01">쏘카</a></li>
                     <li><a href="#" class="depth-01">쏘카플랜</a></li>
                     <li><a href="#" class="depth-01">모두의주차장</a></li>
@@ -53,7 +45,7 @@
                     <li><a href="#" class="depth-01">쏘카 항공권</a></li>
                 </ul><!-- .gnb end -->
 
-                <ul class="gnb">
+                <ul class="gnb under">
                     <li><a href="#" class="depth-02">(주)쏘카</a></li>
                     <li><a href="#" class="depth-02">쏘카 브랜드 센터</a></li>
 
@@ -78,157 +70,157 @@
 
             </div><!-- .visual_btn end -->
         </section><!-- .main_visual -->
+        <section class="section-01">
+            <div class="inner">
+                <h3>차가 필요한 모든 순간<br />
+                    <strong>쏘카 카셰어링</strong>
+                </h3>
+                <div class="slides">
+                    <div class="list">
+                        <div class="item active">
+                            <img src="img/slide_normal_02.48bf25d4ecccd1025052.jpg" alt="">
+
+                            <div class="text">
+                                <strong>다양한 차종을</strong>
+                                <p>가까운 거리에 있는 쏘카존이나<br />내가 있는 곳으로 차를 불러 편하게 이동</p>
+                            </div><!-- .text end -->
+                        </div><!-- .item end -->
+                        <div class="item">
+                            <img src="img/slide_normal_03.d476172897623a65922d.jpg" alt="">
+                            <div class="text">
+                                <strong>다양한 차종을</strong>
+                                <p>가까운 거리에 있는 쏘카존이나<br />내가 있는 곳으로 차를 불러 편하게 이동</p>
+                            </div><!-- .text end -->
+                        </div><!-- .item end -->
+                        <div class="item">
+                            <img src="img/slide_normal_00.f85e80ec4e0fe5d3a973.jpg" alt="">
+                            <div class="text">
+                                <strong>24시간 언제나</strong>
+                                <p>시간에 구애받지 않고<br />쏘카 앱으로 간편하게 예약</p>
+                            </div><!-- .text end -->
+                        </div><!-- .item end -->
+                        <div class="item">
+                            <img src="img/card_normal_01.aef2d5c9bdde62c36c5b.jpg" alt="">
+                            <div class="text">
+                                <strong>전국 어디서나</strong>
+                                <p>가까운 거리에 있는 쏘카존이나<br />내가 있는 곳으로 차를 불러 편하게 이동</p>
+                            </div><!-- .text end -->
+                        </div><!-- .item end -->
+                    </div><!-- .list end -->
+                    <div class="item_btn">
+                        <button class="prev"><img src="img/icons8-back-50.png" alt=""></button><!-- .prev -->
+                        <button class="next"><img src="img/icons8-앞으로-50.png" alt=""></button><!-- .next -->
+                    </div><!-- .slide_navigation end -->
+                </div><!-- .slides end -->
+            </div><!-- .inner end -->
+        </section><!-- .section-01 end -->
+
+
+        <section class="section-02">
+            <div class="inner">
+                <h3>끊임없이 확장되는 이동 경험<br />
+                    <strong>쏘카의 다양한 서비스</strong>
+                </h3>
+                <div class="list">
+                    <div class="item">
+                        <a href="#">
+                            <img src="img/card_normal_00.d1fd0c76d94368682039.jpg" alt="">
+                            <div class="text_wrap">
+                                <div class="text">
+                                    <strong>쏘카플랜</strong>
+                                    <p>한 달 이상 원하는 만큼 내 차처럼 이용하는<br />중장기 차량 대여 서비스</p>
+                                </div><!-- .text end -->
+                                <div class="item_btn">
+                                    <img src="img/완성형바로가기.png" alt="자세히보기" class="before">
+                                    <img src="img/완성형바로가기after.png" alt="자세히보기" class="after">
+                                </div><!-- .item_btn end -->
+                            </div><!-- .text_wrap end -->
+                        </a>
+                    </div><!-- .item end -->
+                    <div class="item">
+                        <a href="#">
+                            <img src="img/card_normal_01.aef2d5c9bdde62c36c5b.jpg" alt="">
+
+                            <div class="text_wrap">
+                                <div class="text">
+                                    <strong>쏘카플랜</strong>
+                                    <p>한 달 이상 원하는 만큼 내 차처럼 이용하는<br />중장기 차량 대여 서비스</p>
+                                </div><!-- .text end -->
+                                <div class="item_btn">
+                                    <img src="img/완성형바로가기.png" alt="자세히보기" class="before">
+                                    <img src="img/완성형바로가기after.png" alt="자세히보기" class="after">
+                                </div><!-- .item_btn end -->
+                            </div><!-- .text_wrap end -->
+                        </a>
+                    </div><!-- .item end -->
+                    <div class="item">
+                        <a href="#">
+                            <img src="img/card_normal_02.ddfd315cdf2c26684ec7.jpg" alt="">
+
+                            <div class="text_wrap">
+                                <div class="text">
+                                    <strong>쏘카플랜</strong>
+                                    <p>한 달 이상 원하는 만큼 내 차처럼 이용하는<br />중장기 차량 대여 서비스</p>
+                                </div><!-- .text end -->
+                                <div class="item_btn">
+                                    <img src="img/완성형바로가기.png" alt="자세히보기" class="before">
+                                    <img src="img/완성형바로가기after.png" alt="자세히보기" class="after">
+                                </div><!-- .item_btn end -->
+                            </div><!-- .text_wrap end -->
+                        </a>
+                    </div><!-- .item end -->
+                    <div class="item">
+                        <a href="#">
+                            <img src="img/card_normal_03.13bdbdd988e76b83764a.jpg" alt="">
+
+                            <div class="text_wrap">
+                                <div class="text">
+                                    <strong>쏘카플랜</strong>
+                                    <p>한 달 이상 원하는 만큼 내 차처럼 이용하는<br />중장기 차량 대여 서비스</p>
+                                </div><!-- .text end -->
+                                <div class="item_btn">
+                                    <img src="img/완성형바로가기.png" alt="자세히보기" class="before">
+                                    <img src="img/완성형바로가기after.png" alt="자세히보기" class="after">
+                                </div><!-- .item_btn end -->
+                            </div><!-- .text_wrap end -->
+                        </a>
+                    </div><!-- .item end -->
+                    <div class="item">
+                        <a href="#">
+                            <img src="img/card_normal_04.f6f2a1efdbe69958636b.jpg" alt="">
+
+                            <div class="text_wrap">
+                                <div class="text">
+                                    <strong>쏘카플랜</strong>
+                                    <p>한 달 이상 원하는 만큼 내 차처럼 이용하는<br />중장기 차량 대여 서비스</p>
+                                </div><!-- .text end -->
+                                <div class="item_btn">
+                                    <img src="img/완성형바로가기.png" alt="자세히보기" class="before">
+                                    <img src="img/완성형바로가기after.png" alt="자세히보기" class="after">
+                                </div><!-- .item_btn end -->
+                            </div><!-- .text_wrap end -->
+                        </a>
+                    </div><!-- .item end -->
+
+                </div><!-- .list end -->
+            </div><!-- .inner end -->
+        </section><!-- .section-02 end -->
+
+
+        <div class="section-03">
+            <a href="#">
+                <img src="img/brand_center.f3245d6952d8f5386bf3.jpg" alt="배너이미지">
+                <div class="text_wrap">
+                    <strong>쏘카가 새롭게 그려나가는 자유로운 이동</strong>
+                    <div class="btn">
+                        <span>브랜드 센터 바로가기</span>
+                        <img src="img/icon.png" alt="">
+                    </div><!-- .btn -->
+                </div><!-- .text_wrap end -->
+            </a>
+        </div><!-- .section-03 end -->
     </main><!-- .main end -->
 
-    <section class="section-01">
-        <div class="inner">
-            <h3>차가 필요한 모든 순간<br />
-                <strong>쏘카 카셰어링</strong>
-            </h3>
-            <div class="slides">
-                <div class="list">
-                    <div class="item active">
-                        <img src="img/slide_normal_02.48bf25d4ecccd1025052.jpg" alt="">
-
-                        <div class="text">
-                            <strong>다양한 차종을</strong>
-                            <p>가까운 거리에 있는 쏘카존이나<br />내가 있는 곳으로 차를 불러 편하게 이동</p>
-                        </div><!-- .text end -->
-                    </div><!-- .item end -->
-                    <div class="item">
-                        <img src="img/slide_normal_03.d476172897623a65922d.jpg" alt="">
-                        <div class="text">
-                            <strong>다양한 차종을</strong>
-                            <p>가까운 거리에 있는 쏘카존이나<br />내가 있는 곳으로 차를 불러 편하게 이동</p>
-                        </div><!-- .text end -->
-                    </div><!-- .item end -->
-                    <div class="item">
-                        <img src="img/slide_normal_00.f85e80ec4e0fe5d3a973.jpg" alt="">
-                        <div class="text">
-                            <strong>24시간 언제나</strong>
-                            <p>시간에 구애받지 않고<br />쏘카 앱으로 간편하게 예약</p>
-                        </div><!-- .text end -->
-                    </div><!-- .item end -->
-                    <div class="item">
-                        <img src="img/card_normal_01.aef2d5c9bdde62c36c5b.jpg" alt="">
-                        <div class="text">
-                            <strong>전국 어디서나</strong>
-                            <p>가까운 거리에 있는 쏘카존이나<br />내가 있는 곳으로 차를 불러 편하게 이동</p>
-                        </div><!-- .text end -->
-                    </div><!-- .item end -->
-                </div><!-- .list end -->
-                <div class="item_btn">
-                    <button class="prev"><img src="img/icons8-back-50.png" alt=""></button><!-- .prev -->
-                    <button class="next"><img src="img/icons8-앞으로-50.png" alt=""></button><!-- .next -->
-                </div><!-- .slide_navigation end -->
-            </div><!-- .slides end -->
-        </div><!-- .inner end -->
-    </section><!-- .section-01 end -->
-
-
-    <section class="section-02">
-        <div class="inner">
-            <h3>끊임없이 확장되는 이동 경험<br />
-                <strong>쏘카의 다양한 서비스</strong>
-            </h3>
-            <div class="list">
-                <div class="item">
-                    <a href="#">
-                        <img src="img/card_normal_00.d1fd0c76d94368682039.jpg" alt="">
-                        <div class="text_wrap">
-                            <div class="text">
-                                <strong>쏘카플랜</strong>
-                                <p>한 달 이상 원하는 만큼 내 차처럼 이용하는<br />중장기 차량 대여 서비스</p>
-                            </div><!-- .text end -->
-                            <div class="item_btn">
-                                <img src="img/완성형바로가기.png" alt="자세히보기" class="before">
-                                <img src="img/완성형바로가기after.png" alt="자세히보기" class="after">
-                            </div><!-- .item_btn end -->
-                        </div><!-- .text_wrap end -->
-                    </a>
-                </div><!-- .item end -->
-                <div class="item">
-                    <a href="#">
-                        <img src="img/card_normal_01.aef2d5c9bdde62c36c5b.jpg" alt="">
-
-                        <div class="text_wrap">
-                            <div class="text">
-                                <strong>쏘카플랜</strong>
-                                <p>한 달 이상 원하는 만큼 내 차처럼 이용하는<br />중장기 차량 대여 서비스</p>
-                            </div><!-- .text end -->
-                            <div class="item_btn">
-                                <img src="img/완성형바로가기.png" alt="자세히보기" class="before">
-                                <img src="img/완성형바로가기after.png" alt="자세히보기" class="after">
-                            </div><!-- .item_btn end -->
-                        </div><!-- .text_wrap end -->
-                    </a>
-                </div><!-- .item end -->
-                <div class="item">
-                    <a href="#">
-                        <img src="img/card_normal_02.ddfd315cdf2c26684ec7.jpg" alt="">
-
-                        <div class="text_wrap">
-                            <div class="text">
-                                <strong>쏘카플랜</strong>
-                                <p>한 달 이상 원하는 만큼 내 차처럼 이용하는<br />중장기 차량 대여 서비스</p>
-                            </div><!-- .text end -->
-                            <div class="item_btn">
-                                <img src="img/완성형바로가기.png" alt="자세히보기" class="before">
-                                <img src="img/완성형바로가기after.png" alt="자세히보기" class="after">
-                            </div><!-- .item_btn end -->
-                        </div><!-- .text_wrap end -->
-                    </a>
-                </div><!-- .item end -->
-                <div class="item">
-                    <a href="#">
-                        <img src="img/card_normal_03.13bdbdd988e76b83764a.jpg" alt="">
-
-                        <div class="text_wrap">
-                            <div class="text">
-                                <strong>쏘카플랜</strong>
-                                <p>한 달 이상 원하는 만큼 내 차처럼 이용하는<br />중장기 차량 대여 서비스</p>
-                            </div><!-- .text end -->
-                            <div class="item_btn">
-                                <img src="img/완성형바로가기.png" alt="자세히보기" class="before">
-                                <img src="img/완성형바로가기after.png" alt="자세히보기" class="after">
-                            </div><!-- .item_btn end -->
-                        </div><!-- .text_wrap end -->
-                    </a>
-                </div><!-- .item end -->
-                <div class="item">
-                    <a href="#">
-                        <img src="img/card_normal_04.f6f2a1efdbe69958636b.jpg" alt="">
-
-                        <div class="text_wrap">
-                            <div class="text">
-                                <strong>쏘카플랜</strong>
-                                <p>한 달 이상 원하는 만큼 내 차처럼 이용하는<br />중장기 차량 대여 서비스</p>
-                            </div><!-- .text end -->
-                            <div class="item_btn">
-                                <img src="img/완성형바로가기.png" alt="자세히보기" class="before">
-                                <img src="img/완성형바로가기after.png" alt="자세히보기" class="after">
-                            </div><!-- .item_btn end -->
-                        </div><!-- .text_wrap end -->
-                    </a>
-                </div><!-- .item end -->
-
-            </div><!-- .list end -->
-        </div><!-- .inner end -->
-    </section><!-- .section-02 end -->
-
-
-    <div class="section-03">
-        <a href="#">
-            <img src="img/brand_center.f3245d6952d8f5386bf3.jpg" alt="배너이미지">
-            <div class="text_wrap">
-                <strong>쏘카가 새롭게 그려나가는 자유로운 이동</strong>
-                <div class="btn">
-                    <span>브랜드 센터 바로가기</span>
-                    <img src="img/icon.png" alt="">
-                </div><!-- .btn -->
-            </div><!-- .text_wrap end -->
-        </a>
-    </div><!-- .section-03 end -->
 
     <footer class="footer">
         <div class="inner">
