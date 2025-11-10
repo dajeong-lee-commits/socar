@@ -295,6 +295,7 @@ button {
     height: 48px;
     top: 50%;
     transform: translateY(-50%);
+    display: none;
 }
 
 .section-01 .inner .slides .slide_navigation button img {
